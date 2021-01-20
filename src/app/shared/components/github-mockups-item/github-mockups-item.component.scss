@@ -1,0 +1,62 @@
+@import "../../../../assets/scss/global.scss";
+
+.container-fluid{
+    .row {
+        margin: 5px;
+    }
+    .ctn-avatar{
+        padding: 5px;
+        img{
+            // width: 100%;
+            width: 99% !important;
+            height: 100%;
+        }
+    }
+
+    .ctn-repos-infos{
+       padding: 5px;
+       padding-left: 10px;
+       padding-bottom: 0px;
+
+       .ctn-repo-name{
+            .repo-name{
+                margin: 0px;
+                font-size: 21px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 300;
+                color: #333;
+            }
+       }
+
+       .ctn-repo-description{
+           margin-top: 10px;
+           .description{
+               font-size: 14px;
+               color: #555;
+               font-weight: normal;
+           }
+       }
+
+       .ctn-repo-details{
+       
+           .solid-border-black, .ctn-date-submission{
+            //    padding: 3px;
+               border-width: 2px;
+               
+           }
+
+           .ctn-stars-number, .ctn-issues-number{ 
+                margin-right: 3px;
+            }
+
+            .stars-number, .issues-number,.date-submission{
+                font-weight: normal;
+                color: #222;
+                font-size: 14px;
+            }
+             
+        }
+
+    }
+
+}
