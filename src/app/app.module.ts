@@ -8,6 +8,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubMockupsItemComponent } from './shared/components/github-mockups-item/github-mockups-item.component';
+import { GithubMockupsListComponent } from './modules/home/components/github-mockups-list/github-mockups-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { GithubMockupsItemComponent } from './shared/components/github-mockups-i
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    GithubMockupsItemComponent
+    GithubMockupsItemComponent,
+    GithubMockupsListComponent
   ],
   imports: [
     BrowserModule,

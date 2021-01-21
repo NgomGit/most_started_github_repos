@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import GithubRepo from '../../models/GithubRepo';
+import { DateService } from 'src/app/core/services/date.service';
 
 @Component({
   selector: 'app-github-mockups-item',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubMockupsItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() githubRepo: GithubRepo
+  constructor(private dateService: DateService) { }
 
   ngOnInit() {
+   this.setFormatedDate()
+  }
+
+  setFormatedDate(){
+    
+    this.githubRepo['timeInterval'] = this.dateService
+    .reformatDateTimeInterval(this.githubRepo.created_at)
   }
 
 }

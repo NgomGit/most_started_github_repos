@@ -1,2 +1,5 @@
-<p>home works!</p>
-<app-github-mockups-item></app-github-mockups-item>
+<div >
+   <div *ngFor="let githubRepo of githubRepos; let i=index;">
+    <app-github-mockups-item [githubRepo]="githubRepo"></app-github-mockups-item>
+   </div>
+</div>
