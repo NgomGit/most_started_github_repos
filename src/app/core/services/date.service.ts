@@ -19,7 +19,6 @@ export class DateService {
     let date1 = this.getDateFromDateFormat(dateFormat)
       let num_months , num_years
       let num_days = this.getTimeInterval(date1)
-      console.log('day interval ', num_days)
       if(num_days >  UNIT_YEAR_IN_DAYS){
         num_years = Math.floor(num_days/UNIT_YEAR_IN_DAYS)
         num_days = Math.floor( (num_days / UNIT_YEAR_IN_DAYS - num_years ) * UNIT_YEAR_IN_DAYS)
