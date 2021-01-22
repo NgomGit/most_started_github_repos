@@ -11,3 +11,6 @@ export const UNIT_YEAR_IN_DAYS = UNIT_YEAR_IN_MONTHS * UNIT_MONTH_IN_DAYS
 
 export const ALERT_TYPE_ERROR="error"
 export const ALERT_TYPE_SUCCESS="succes"
+
+export const NETWORK_ISSUES = 0
+export const HTTP_ERROR_FORBIDDEN = 403

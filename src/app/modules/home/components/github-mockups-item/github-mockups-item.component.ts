@@ -16,7 +16,6 @@ export class GithubMockupsItemComponent implements OnInit {
   }
 
   setFormatedDate(){
-    
     this.githubRepo['timeInterval'] = this.dateService
     .reformatDateTimeInterval(this.githubRepo.created_at)
   }
