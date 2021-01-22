@@ -1,0 +1,18 @@
+<div *ngIf="githubRepos">
+    <div *ngFor="let githubRepo of githubRepos;trackBy:trackByFn; let i=index;">
+     <app-github-mockups-item [githubRepo]="githubRepo"></app-github-mockups-item>
+    </div>
+ </div>
+ <ngx-spinner 
+       bdColor="#1F1F1A"
+       size="medium"
+       color="#f1f1EB"
+       type="ball-scale-multiple">
+    <p class="loader-title">Loading...</p>
+ </ngx-spinner>
+ 
+ 
+ 
+ 
+ 
+ 

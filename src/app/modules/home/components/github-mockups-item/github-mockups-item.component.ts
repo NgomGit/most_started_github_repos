@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import GithubRepo from '../../models/GithubRepo';
 import { DateService } from 'src/app/core/services/date.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { DateService } from 'src/app/core/services/date.service';
 })
 export class GithubMockupsItemComponent implements OnInit {
 
-  @Input() githubRepo: GithubRepo
+  @Input() githubRepo
   constructor(private dateService: DateService) { }
 
   ngOnInit() {
