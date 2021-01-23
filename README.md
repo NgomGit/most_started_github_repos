@@ -1,5 +1,13 @@
 # MostStartedGithubRepos
 
+A small web app that will list the most starred Github repos that were created in the last 30 days. It will be fetching the sorted JSON data directly from the Github API.
+
+## Libraries used
+
+ [Sweetalert2](https://www.npmjs.com/package/sweetalert2) to display specially error message in our case but can be use to display successfuly massage as well.
+ 
+ [Ngx-spinner](https://www.npmjs.com/package/ngx-spinner) to display a loader when doing request to the api.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
