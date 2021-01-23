@@ -22,7 +22,6 @@ import { GithubMockupsItemComponent } from './modules/home/components/github-moc
     AppRoutingModule,
     HttpClientModule,
     NgxSpinnerModule,
- 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
