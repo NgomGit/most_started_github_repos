@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
   nextPageNumber = 2;
   isLoadingPage = false;
+  isMaxReposAllowedReached=false;
   githubRepos:any[] = new Array();
 
   constructor(private apiService:ApiService,
@@ -49,7 +50,7 @@ export class HomeComponent implements OnInit {
     let scrollHeight = document.documentElement.scrollHeight;
     let scrollPosition = window.scrollY + window.innerHeight;
     if(scrollHeight == scrollPosition){
-      if(!this.isLoadingPage){
+      if(!this.isLoadingPage && !this.isMaxReposAllowedReached){
         this.spinner.show();
         this.LoadNextPage();
       }
@@ -73,6 +74,8 @@ export class HomeComponent implements OnInit {
           }
           if(error.status != HTTP_ERROR_FORBIDDEN){
             this.alertService.showMessage("Error",error['message'],ALERT_TYPE_ERROR);
+          }else{
+            this.isMaxReposAllowedReached = true
           }
         });
   }

@@ -5,7 +5,7 @@
     type="ball-scale-multiple">
     <p class="loader-title">Loading...</p>
 </ngx-spinner>
-<div class="ctn-list" *ngIf="githubRepos.length > 0">
+<div class="ctn-list col-md-10" *ngIf="githubRepos.length > 0">
     <h4 id="title"> Most Started Github repository in last 30 days</h4>
     <div *ngFor="let githubRepo of githubRepos;trackBy:trackByFn; let i=index;">
      <app-github-mockups-item [githubRepo]="githubRepo"></app-github-mockups-item>

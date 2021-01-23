@@ -1,6 +1,6 @@
 @import "../../../../../assets/scss/global.scss";
 
-.container-fluid{
+.container{
     // margin: 27px;
     width: 90%;
     padding: 20px;
@@ -39,12 +39,16 @@
        }
 
        .ctn-repo-description{
-           height: 50px;
+            height: 48px;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
            .description{
                font-size: 13px;
                color: #555;
                font-weight: normal;
                height: 100%;
+               
+               
            }
        }
 
@@ -86,7 +90,7 @@
 }
 
 // hover effect on list-item
-.container-fluid:hover{
+.container:hover{
     border-bottom: 1px solid #aaa;
     background-color: #fefefe;
     border-radius: 8px;
