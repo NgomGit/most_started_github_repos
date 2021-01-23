@@ -8,8 +8,6 @@ import 'sweetalert2/src/sweetalert2.scss'
 })
 export class AlertService {
 
-  
-
   constructor() { }
 
   showMessage(title,message,type){
@@ -17,6 +15,6 @@ export class AlertService {
       title,
       message,
       type
-    )
+    );
   }
 }

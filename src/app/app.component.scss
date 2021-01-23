@@ -1,1 +1,8 @@
 @import '../assets/scss/global.scss';
+
+.container-fluid{
+    margin-top: 0;
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+}

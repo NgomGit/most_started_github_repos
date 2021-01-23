@@ -10,12 +10,11 @@ export class ApiService {
 
   constructor( private http: HttpClient) { }
 
-
-  public getElementList(endpoint: string) {
-    return this.http.get(environment.apiEndpoint + endpoint)
+  public getElementList(resourceUrl: string) {
+    return this.http.get(environment.apiEndpoint + resourceUrl);
   }
 
-  public getElementListByPageNumber(endpoint: string, pageNumber:number) {
-    return this.http.get(environment.apiEndpoint + endpoint + "&page=" + pageNumber);
+  public getElementListByPageNumber(resourceUrl: string, pageNumber:number) {
+    return this.http.get(environment.apiEndpoint + resourceUrl + "&page=" + pageNumber);
   }
 }

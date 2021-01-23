@@ -8,16 +8,16 @@ import { DateService } from 'src/app/core/services/date.service';
 })
 export class GithubMockupsItemComponent implements OnInit {
 
-  @Input() githubRepo
+  @Input() githubRepo;
   constructor(private dateService: DateService) { }
 
   ngOnInit() {
-   this.setFormatedDate()
+   this.setFormatedDate();
   }
 
   setFormatedDate(){
     this.githubRepo['timeInterval'] = this.dateService
-    .reformatDateTimeInterval(this.githubRepo.created_at)
+      .reformatDateTimeInterval(this.githubRepo.created_at);
   }
 
 }
